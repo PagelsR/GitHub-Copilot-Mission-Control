@@ -1,7 +1,11 @@
 
 # ✈️ GitHub Copilot Agent Mode: Leaflet.js Map for Airplane Tracking
 
-This project guides GitHub Copilot Agent Mode to build Leaflet.js-based airplane tracking maps in stages. Paste each step into Copilot Chat, review the output, then proceed to the next.
+⏱️ **Estimated Duration: 25–35 minutes**
+
+A step-by-step demo for using GitHub Copilot Agent Mode to build interactive Leaflet.js maps that visualize real-time and aggregated air traffic data using the OpenSky Network API.
+
+This project guides Copilot Agent Mode through atomic tasks, letting you build a complete airplane tracking app by pasting one prompt at a time. No live server or cloud deployment required — it all runs locally!
 
 ---
 
