@@ -48,9 +48,9 @@ code .
 > [!TIP]
 > Do not click **Done**, since we need to continue with the next steps.
 
-- Open the HTML file in a browser to see the map with airplane markers.
+- Open the app in a browser to see the new functionality.
 
-It looks like we have quite a few markers here, which might make it a bit overwhelming to navigate. In the next step, let's apply a filter to narrow down our display and make things more manageable!"
+The page looks a bit sad with no data, so let's add some data in the next step.
 
 ---
 
@@ -84,9 +84,7 @@ Great job giving your page some data so that you can really start working with i
 > [!TIP]
 > Do not click **Done**, since we need to continue with the next steps.
 
-- Refresh the HTML file in a browser, zoom in, the hoover over a marker to see the tooltip.
-
-Fantastic work adding the tooltips! They make it so much easier to get quick details about each flight. In the next step, let's focus on refining the visuals or adding interactivity to make the display even more engaging by adding some color to the markers based on the flight status!
+- Refresh the page and test out the new functionality.
 
 ---
 
@@ -98,7 +96,7 @@ Fantastic work adding the tooltips! They make it so much easier to get quick det
 - Add a way to make a reserved court available by clicking on a red icon
 
 
-🛑 Pause here so I can check the updated marker styles.
+🛑 Pause here so I can check the updated functionality.
 
 ```
 
@@ -106,11 +104,9 @@ Fantastic work adding the tooltips! They make it so much easier to get quick det
 
 - Click **Done** to complete this step.
 
-- Refresh the HTML file in a browser, zoom in, and look for grounded aircraft in red.
+- Refresh the page, and test the new features.
 
-Great work adding those advanced filtering options! Now, for the next step, let's create a new bubble map to visually represent the data in a dynamic and engaging way!
-
-- Close the current HTML file.
+Great work adding usability features! 
 
 ---
 
@@ -120,7 +116,7 @@ Great work adding those advanced filtering options! Now, for the next step, let'
 Implement a Weekly view functionality that shows each day of the week in a calendar view
 ```
 
-And there it is! Our map’s up and running, with real airplane data plotted — all guided smoothly by Copilot Agent Mode!
+And there it is! Our app is up and running, with some mock data and the ability to add and delete reservations — all guided smoothly by Copilot Agent Mode!
 ---
 
 ## Pro Tips During Demo
