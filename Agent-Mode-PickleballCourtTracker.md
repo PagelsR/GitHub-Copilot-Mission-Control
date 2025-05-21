@@ -55,7 +55,11 @@ The page looks a bit sad with no data, so let's add some data in the next step.
 
 ## 🧩 Step 2: Add some data
 ```plaintext
-Create mock data to be able to populate the schedule, broken down into 90 minute reservations.
+- Create mock reservation data for the pickleball schedule.
+- Use about 20 unique first names to represent different players.
+- Randomly assign reservations to 10 courts, using 90-minute time blocks throughout the day.
+- Ensure the data structure supports Player Name, Court Number, Start Time, and End Time.
+- Spread the reservations out so it looks like a real day of activity.
 
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
@@ -124,15 +128,15 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 Now we’ll add a modal to view, edit, or delete a reservation when a user clicks on a reserved slot.
 
 ```plaintext
-- When a user clicks on a reserved slot, open a modal that shows:
-  - Player name
-  - Reservation time
-  - Court number
-- Include Edit and Delete buttons in the modal for managing the reservation.
-- Implement the ability to delete a reservation from the modal.
-- Make sure the reservation is removed from the schedule.
-- Ensure the modal has a clean layout and works on desktop and mobile.
-🛑 Stop after this step so I can review the modal interaction and test the delete functionality.
+- Add a modal component that can be used to view, edit, or create a reservation.
+- When a user clicks on an existing reservation, open the modal pre-filled with that reservation's details.
+- When a user clicks on the “Add Reservation” button, open the same modal in empty/create mode.
+- Include inputs for Player Name, Time, and Court.
+- Add Save and Cancel buttons.
+- Make sure the modal has a clean layout and works on desktop and mobile.
+
+🛑 Stop after this step so I can review the modal interaction and test the full create/edit/delete flow.
+
 ```
 
 ---
