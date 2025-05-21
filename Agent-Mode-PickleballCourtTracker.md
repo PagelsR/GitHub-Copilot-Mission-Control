@@ -1,4 +1,4 @@
-# 🎾 GitHub Copilot Agent Mode: Pickleball Reservation Tracker
+# 🎾 GitHub Copilot Agent Mode: Pickleball Court Tracker
 
 ⏱️ **Estimated Duration: 15–20 minutes**
 
