@@ -163,7 +163,8 @@ Now we’ll add a modal to view, edit, or delete a reservation when a user click
 - When a user clicks on an existing reservation, open the modal pre-filled with that reservation's details.
 - When a user clicks on the “Add Reservation” button, open the same modal in empty/create mode.
 - Include inputs for Player Name, Time, and Court.
-- Add Save and Cancel buttons.
+- Add Save, Cancel, and Delete buttons.
+- The Delete button should only appear in edit mode and should remove the reservation.
 - Make sure the modal has a clean layout and works on desktop and mobile.
 
 🛑 Stop after this step so I can review the modal interaction and test the full create/edit/delete flow.
