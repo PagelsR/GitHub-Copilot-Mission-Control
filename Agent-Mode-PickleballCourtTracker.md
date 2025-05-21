@@ -60,6 +60,7 @@ The page looks a bit sad with no data, so let's add some data in the next step.
 - Randomly assign reservations to 10 courts, using 90-minute time blocks throughout the day.
 - Ensure the data structure supports Player Name, Court Number, Start Time, and End Time.
 - Spread the reservations out so it looks like a real day of activity.
+- Update the main app component to import and display this data in a table.
 
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
