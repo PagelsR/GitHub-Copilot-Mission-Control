@@ -119,6 +119,8 @@ Let’s add a weekly calendar view so users can get a full snapshot of reservati
 
 ```plaintext
 Implement a Weekly view functionality that shows each day of the week in a calendar view
+
+🛑 Pause here so I can review the layout.
 ```
 
 ---
@@ -136,7 +138,6 @@ Now we’ll add a modal to view, edit, or delete a reservation when a user click
 - Make sure the modal has a clean layout and works on desktop and mobile.
 
 🛑 Stop after this step so I can review the modal interaction and test the full create/edit/delete flow.
-
 ```
 
 ---
@@ -148,10 +149,11 @@ We’re enhancing the UX by adding a toggle so users can switch between daily an
 We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
 
 ```plaintext
-- Add a toggle or button to switch between Daily and Weekly view.
-- Weekly view should show a grid where each column is a day of the week.
-- Populate the weekly view with reservations for all courts for each day.
-🛑 Pause here so I can review how the toggle behaves.
+- Add a toggle or button group to switch between Daily and Weekly views.
+- Place the toggle near the top of the calendar.
+- Reserve space to the right of the toggle for a search input (will be added in next step).
+- Use flex layout or a simple horizontal container to align the view toggle and future search input on the same row.
+🛑 Pause here so I can review how the toggle and layout behavior.
 ```
 
 ---
@@ -195,6 +197,27 @@ To enhance the user experience, we’ll add toast notifications for actions like
 🛑 Pause here so I can verify the feedback notifications work as expected.
 ```
 
+---
+
+## 🧩 Step 11: Add Court Availability Summary
+
+Let’s provide a quick overview of court availability for the day in the Daily view.
+
+```plaintext
+- Add a sidebar widget to the right of the main calendar view.
+- This widget should include:
+  - A list of courts with the most available time slots *today*.
+  - The next available time slot for each court.
+- Sort courts so the ones with the most availability appear first.
+- Make sure it updates dynamically when new reservations are added or removed.
+- Use simple text or a clean list layout to keep it readable.
+
+🛑 Pause here so I can review the availability summary and verify it's working correctly.
+```
+
+---
+
+## 🚀 Congratulations!
 
 And there it is! Our app is up and running, with some mock data and the ability to add and delete reservations — all guided smoothly by Copilot Agent Mode!
 
