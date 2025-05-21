@@ -29,6 +29,27 @@ code .
 
 ---
 
+> [!IMPORTANT]
+> 💡 When Copilot creates or updates a React component:
+> - Always check that `React`, `useState`, `useEffect`, or any other hooks are properly imported.
+> - Missing imports can silently break your app, resulting in a blank screen.
+> - Even if using Vite or a modern React setup that hides some imports, being explicit during demos helps prevent confusion and errors.
+
+---
+
+## 🧭 Step 0: Starter Message for Agent Mode
+```plaintext
+Before we begin, please remember to always import the necessary React functions.
+
+If you create or modify any components using JSX or React hooks (like useState or useEffect), make sure to include:
+
+import React, { useState, useEffect } from 'react';
+
+Even if you're using Vite or modern React, missing imports may cause blank screens or unexpected behavior. Let's get started building the Pickleball Reservation Tracker now!
+```
+
+✅ Paste that into the first prompt window before you start giving Copilot steps. It helps set the tone and prevent silent errors later in the demo.
+
 ✅ You're all set to run this demo with GitHub Copilot Agent Mode. Paste each block above one at a time and enjoy the ride!
 
 ---
@@ -55,12 +76,16 @@ The page looks a bit sad with no data, so let's add some data in the next step.
 
 ## 🧩 Step 2: Add some data
 ```plaintext
-- Create mock reservation data for the pickleball schedule.
-- Use about 20 unique first names to represent different players.
+- Create mock reservation data for the pickleball schedule using about 20 unique first names.
 - Randomly assign reservations to 10 courts, using 90-minute time blocks throughout the day.
-- Ensure the data structure supports Player Name, Court Number, Start Time, and End Time.
-- Spread the reservations out so it looks like a real day of activity.
-- Update the main app component to import and display this data in a table.
+- Ensure that only about 70% of the possible time slots are filled (leave the rest empty for realism).
+- The data structure should support Player Name, Court Number, Start Time, and End Time.
+- Also, update the main app component to display this data in the calendar/grid view.
+
+
+Ensure that only about 70% of the possible time slots are filled (leave the rest empty for realism).
+The data structure should support Player Name, Court Number, Start Time, and End Time.
+Also, update the main app component to display this data in the calendar/grid view.
 
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
@@ -77,6 +102,9 @@ Great job giving your page some data so that you can really start working with i
 ---
 
 ## 🧩 Step 3: Improve the look and feel
+
+Let’s enhance the daily view to look more like a modern calendar layout with the ability to add new reservations.
+
 ```plaintext
 - Enhance the daily view to look more like a modern calendar layout.
 - Use a card or grid layout to show reservations per court and time.
@@ -90,8 +118,6 @@ Great job giving your page some data so that you can really start working with i
 > Do not click **Done**, since we need to continue with the next steps.
 
 - Refresh the page and test out the new functionality.
-
-~~- Add a way to add a new reservation, including the Court, time, and player name.~~
 
 ---
 
