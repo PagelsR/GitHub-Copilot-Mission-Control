@@ -1,4 +1,3 @@
-
 # 🎾 GitHub Copilot Agent Mode: Pickleball Reservation Tracker
 
 ⏱️ **Estimated Duration: 15–20 minutes**
@@ -115,6 +114,69 @@ Great work adding usability features!
 ```plaintext
 Implement a Weekly view functionality that shows each day of the week in a calendar view
 ```
+
+---
+
+## Step 6: Add Reservation Details Modal with Delete Functionality
+
+```plaintext
+- When a user clicks on a reserved slot, open a modal that shows:
+  - Player name
+  - Reservation time
+  - Court number
+- Include Edit and Delete buttons in the modal for managing the reservation.
+- Implement the ability to delete a reservation from the modal.
+- Make sure the reservation is removed from the schedule.
+- Ensure the modal has a clean layout and works on desktop and mobile.
+🛑 Stop after this step so I can review the modal interaction and test the delete functionality.
+```
+
+---
+
+## Step 7: Add Toggle for Weekly View
+
+```plaintext
+- Add a toggle or button to switch between Daily and Weekly view.
+- Weekly view should show a grid where each column is a day of the week.
+- Populate the weekly view with reservations for all courts for each day.
+🛑 Pause here so I can review how the toggle behaves.
+```
+
+---
+
+##  Step 8: Add Player Search and Filter
+
+```plaintext
+- Add a search bar at the top of the page to filter reservations by player name.
+- As the user types, filter the visible reservations to only show matches.
+- Support partial name matches (e.g., typing "Ann" should show "Anna", "Annette", etc.)
+🛑 Stop after this step so I can test the filtering behavior.
+```
+
+---
+
+## Step 9: Prevent Double-Booking
+
+```plaintext
+- When adding a new reservation, check for existing reservations at the same time on the same court.
+- If a time slot is already taken, disable it in the reservation form.
+- Optionally, show a tooltip or message explaining why a slot is disabled.
+🛑 Pause here so I can test double-booking prevention.
+```
+
+---
+
+## 🧩 Step 10: Add User Feedback
+
+```plaintext
+- Add toast notifications or alert messages for common user actions:
+  - Show a success message when a reservation is successfully made.
+  - Display a confirmation when a reservation is cancelled.
+  - Show error messages if something goes wrong, like trying to double-book.
+- Ensure the toasts are visible but non-intrusive and disappear after a few seconds.
+🛑 Pause here so I can verify the feedback notifications work as expected.
+```
+
 
 And there it is! Our app is up and running, with some mock data and the ability to add and delete reservations — all guided smoothly by Copilot Agent Mode!
 
