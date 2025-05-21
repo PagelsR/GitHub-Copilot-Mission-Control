@@ -1,6 +1,6 @@
 # 🎾 GitHub Copilot Agent Mode: Pickleball Court Tracker
 
-⏱️ **Estimated Duration: 15–20 minutes**
+⏱️ **Estimated Duration: 20 minutes**
 
 A step-by-step demo for using GitHub Copilot Agent Mode to build an interactive reservation system for pickleball courts.
 
@@ -111,6 +111,8 @@ Great work adding usability features!
 
 ## 🧩 Step 5: Visualize the full week
 
+Let’s add a weekly calendar view so users can get a full snapshot of reservations across all days.
+
 ```plaintext
 Implement a Weekly view functionality that shows each day of the week in a calendar view
 ```
@@ -118,6 +120,8 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 ---
 
 ## Step 6: Add Reservation Details Modal with Delete Functionality
+
+Now we’ll add a modal to view, edit, or delete a reservation when a user clicks on a reserved slot.
 
 ```plaintext
 - When a user clicks on a reserved slot, open a modal that shows:
@@ -133,7 +137,11 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 
 ---
 
+We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
+
 ## Step 7: Add Toggle for Weekly View
+
+We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
 
 ```plaintext
 - Add a toggle or button to switch between Daily and Weekly view.
@@ -146,6 +154,8 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 
 ##  Step 8: Add Player Search and Filter
 
+To help users quickly find reservations, we’ll implement a player search bar with partial name matching.
+
 ```plaintext
 - Add a search bar at the top of the page to filter reservations by player name.
 - As the user types, filter the visible reservations to only show matches.
@@ -157,6 +167,8 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 
 ## Step 9: Prevent Double-Booking
 
+Let’s ensure reservation accuracy by preventing double-booking of the same court and time.
+
 ```plaintext
 - When adding a new reservation, check for existing reservations at the same time on the same court.
 - If a time slot is already taken, disable it in the reservation form.
@@ -167,6 +179,8 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 ---
 
 ## 🧩 Step 10: Add User Feedback
+
+To enhance the user experience, we’ll add toast notifications for actions like booking success or cancellation.
 
 ```plaintext
 - Add toast notifications or alert messages for common user actions:
