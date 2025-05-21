@@ -81,7 +81,6 @@ Great job giving your page some data so that you can really start working with i
 - Use a card or grid layout to show reservations per court and time.
 - Make the calendar view responsive so that it adjusts nicely across screen sizes instead of shrinking the font.
 
-
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
 - Click **Keep** button to retain the generated code.
