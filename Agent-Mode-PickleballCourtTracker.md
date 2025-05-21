@@ -193,9 +193,10 @@ We’re enhancing the UX by adding a toggle so users can switch between daily an
 To help users quickly find reservations, we’ll implement a player search bar with partial name matching.
 
 ```plaintext
-- Add a search bar at the top of the page to filter reservations by player name.
+- Add a search bar to filter reservations by player name (supporting partial, case-insensitive matches).
+- Place the search bar between the Weekly View and Add Reservation button in the top bar, using a flex layout so all three controls are aligned and responsive.
 - As the user types, filter the visible reservations to only show matches.
-- Support partial name matches (e.g., typing "Ann" should show "Anna", "Annette", etc.)
+- As the user types, filter the visible reservations in both daily and weekly views to only show matches.
 🛑 Stop after this step so I can test the filtering behavior.
 ```
 
