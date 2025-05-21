@@ -77,8 +77,10 @@ Great job giving your page some data so that you can really start working with i
 
 ## 🧩 Step 3: Improve the look and feel
 ```plaintext
-- Let's enhance the daily view to give it a more visually appealing view, like a calendar view.
-- Add a way to add a new reservation, including the Court, time, and player name
+- Enhance the daily view to look more like a modern calendar layout.
+- Use a card or grid layout to show reservations per court and time.
+- Make the calendar view responsive so that it adjusts nicely across screen sizes instead of shrinking the font.
+
 
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
@@ -89,6 +91,8 @@ Great job giving your page some data so that you can really start working with i
 
 - Refresh the page and test out the new functionality.
 
+~~- Add a way to add a new reservation, including the Court, time, and player name.~~
+
 ---
 
 ## 🧩 Step 4: Let's make it easier to use
@@ -97,7 +101,6 @@ Great job giving your page some data so that you can really start working with i
 - Add the ability to make a reservation directly from an available slot
 - Add a way to filter by Available times
 - Add a way to make a reserved court available by clicking on a red icon
-
 
 🛑 Pause here so I can check the updated functionality.
 
