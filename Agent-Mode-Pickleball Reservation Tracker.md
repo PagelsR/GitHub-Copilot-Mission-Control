@@ -117,6 +117,7 @@ Implement a Weekly view functionality that shows each day of the week in a calen
 ```
 
 And there it is! Our app is up and running, with some mock data and the ability to add and delete reservations — all guided smoothly by Copilot Agent Mode!
+
 ---
 
 ## Pro Tips During Demo
