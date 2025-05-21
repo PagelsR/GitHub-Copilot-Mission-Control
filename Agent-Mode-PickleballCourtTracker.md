@@ -55,12 +55,24 @@ Even if you're using Vite or modern React, missing imports may cause blank scree
 ---
 
 ## 🧩 Step 1: Create Single Page React app
-```plaintext
-- Create a single page application using React. 
-- The app will allow me to keep track of pickleball court reservations in a facility with 10 courts. I want to be able to see things on a daily and weekly basis.
 
-🛑 Stop after completing this step so I can review the output before continuing.
+Let’s set up the folder structure, create a Copilot instructions file, and initialize our project.
+
+```plaintext
+- Create a new project folder called `pickleball-reservations-demo`
+- Inside that folder, create a file named `copilot-instructions.md` in .github folder.
+- This file should include Copilot Agent Mode guidance, including:
+  - A starter message to paste into Copilot Agent Mode
+  - Best practices (like using atomic prompts and avoiding missing imports)
+  - Common issues like blank screens caused by missing React imports
+- Then, initialize a basic React app in this folder using your preferred setup method
+
+🛑 Stop after completing this step so I can review the project setup.
 ```
+
+> [!TIP]
+> 💡 The `copilot-instructions.md` file helps prevent common errors and makes it easier to share this demo with others.
+
 
 - Follow the prompts to run npm commands
 - Click **Keep** button to retain the generated code.
