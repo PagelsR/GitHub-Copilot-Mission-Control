@@ -60,7 +60,7 @@ Let’s set up the folder structure, create a Copilot instructions file, and ini
 
 ```plaintext
 - Create a new project folder called `pickleball-reservations-demo`
-- Inside that folder, create a file named `copilot-instructions.md` in .github folder.
+- Inside that folder, create a file named `copilot-instructions.md` and save in folder called .github.
 - This file should include Copilot Agent Mode guidance, including:
   - A starter message to paste into Copilot Agent Mode
   - Best practices (like using atomic prompts and avoiding missing imports)
