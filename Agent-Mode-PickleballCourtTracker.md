@@ -88,11 +88,6 @@ The page looks a bit sad with no data, so let's add some data in the next step.
 - The data structure should support Player Name, Court Number, Start Time, and End Time.
 - Also, update the main app component to display this data in the calendar/grid view.
 
-
-Ensure that only about 70% of the possible time slots are filled (leave the rest empty for realism).
-The data structure should support Player Name, Court Number, Start Time, and End Time.
-Also, update the main app component to display this data in the calendar/grid view.
-
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
 
@@ -112,9 +107,12 @@ Great job giving your page some data so that you can really start working with i
 Let’s enhance the daily view to look more like a modern calendar layout with the ability to add new reservations.
 
 ```plaintext
-- Enhance the daily view to look more like a modern calendar layout.
-- Use a card or grid layout to show reservations per court and time.
-- Make the calendar view responsive so that it adjusts nicely across screen sizes instead of shrinking the font.
+Update the daily view to use a modern horizontal calendar layout:
+
+- Use a grid where courts are columns and time slots are rows.
+- Display each reservation as a card in the correct grid cell.
+- Make the layout responsive: scale elements (not just font size) for different screen sizes.
+- Use a scrollable container to maintain a consistent calendar look (not a long vertical list).
 
 🛑 Stop after completing this so I can test tooltips and zoom behavior.
 ```
