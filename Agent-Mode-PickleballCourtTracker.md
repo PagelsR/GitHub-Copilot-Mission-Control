@@ -148,17 +148,37 @@ Great work adding usability features!
 
 ## 🧩 Step 5: Visualize the full week
 
-Let’s add a weekly calendar view so users can get a full snapshot of reservations across all days.
+Let’s build the weekly view layout — and while we’re here, let’s spread out the mock data so the view feels full.
 
 ```plaintext
-Implement a Weekly view functionality that shows each day of the week in a calendar view
+- Create a Weekly View layout that displays all 7 days of the week.
+- Randomly assign existing mock reservations across different days (e.g., spread them over Mon–Sun).
+- Use a calendar-style grid showing reservations per court and day.
+- Ensure this view works independently from the daily view for now.
 
 🛑 Pause here so I can review the layout.
 ```
 
 ---
 
-## Step 6: Add Reservation Details Modal with Delete Functionality
+We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
+
+## Step 6: Add Toggle for Weekly View
+
+We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
+
+```plaintext
+- Add a toggle or button group to switch between Daily and Weekly views.
+- Place the toggle near the top of the calendar.
+- Use a flex layout so that this toggle aligns with the future search bar.
+- Update the main view to conditionally render Daily or Weekly based on the selected option.
+
+🛑 Pause here so I can review how the toggle and layout behavior.
+```
+
+---
+
+## Step 7: Add Reservation Details Modal with Delete Functionality
 
 Now we’ll add a modal to view, edit, or delete a reservation when a user clicks on a reserved slot.
 
@@ -172,22 +192,6 @@ Now we’ll add a modal to view, edit, or delete a reservation when a user click
 - Make sure the modal has a clean layout and works on desktop and mobile.
 
 🛑 Stop after this step so I can review the modal interaction and test the full create/edit/delete flow.
-```
-
----
-
-We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
-
-## Step 7: Add Toggle for Weekly View
-
-We’re enhancing the UX by adding a toggle so users can switch between daily and weekly views on demand.
-
-```plaintext
-- Add a toggle or button group to switch between Daily and Weekly views.
-- Place the toggle near the top of the calendar.
-- Reserve space to the right of the toggle for a search input (will be added in next step).
-- Use flex layout or a simple horizontal container to align the view toggle and future search input on the same row.
-🛑 Pause here so I can review how the toggle and layout behavior.
 ```
 
 ---
