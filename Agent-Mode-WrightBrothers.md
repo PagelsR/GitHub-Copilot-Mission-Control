@@ -243,6 +243,40 @@ API URL: https://bookish-halibut-5r59rvx4j5hpvjp-1903.app.github.dev/planes/
 
 ---
 
+### GitHub Issue Template: Feature Request — Add Plane Form Modal 
+
+When using GitHub Copilot to create issues, you can leverage the following template to report bugs or request enhancements.
+
+
+**Title:**
+```
+Feature: Add modal form for creating a new Plane
+```
+
+```
+**Steps to Reproduce:**
+
+1. Create a new page at `/add-plane` in `AddPlanePage.tsx`
+2. Build a POST form that submits to:
+   `https://bookish-halibut-5r59rvx4j5hpvjp-1903.app.github.dev/planes/`
+3. Use the existing `Plane` model (from `Plane.cs`)
+4. Form should:
+
+   * Use **Formik** for form handling
+   * Use **Yup** for validation
+   * Include **all fields from Plane.cs** (don’t skip any)
+   * Use **Tailwind CSS** for styling to match `PlaneList.tsx`
+   * Include proper labels and IDs
+   * Redirect to home page on success
+   * Be accessible at `/add-plane`
+   * Appear as a **modal**, not a full page
+
+**Copilot Task:**
+Please build the full modal form based on the specs above.
+```
+
+---
+
 ## Demo 11: View / Edit / Delete Planes
 
 ### Scenario
@@ -285,3 +319,48 @@ Frontend Steps:
 - Run Playwright tests
 - Build frontend for production
 ```
+
+### GitHub Issue Template: Feature Request — Build and Test Pipeline Automation
+
+When using GitHub Copilot to create issues, you can leverage the following template to report bugs or request enhancements.
+
+**Title:**
+```
+Feature: Create GitHub Actions CI/CD pipeline for backend and frontend
+```
+
+```
+**Steps to Reproduce:**
+
+1. Backend and frontend projects exist in the same repo.
+2. The backend is a typical .NET project with unit tests.
+3. The frontend uses a modern JavaScript stack with Playwright tests.
+
+**Expected Behavior:**
+A GitHub Actions workflow file should be created in `.github/workflows/` that:
+
+* Runs on every `push` and `pull_request`
+* Builds and tests both backend and frontend
+
+**Pipeline Requirements:**
+
+**Backend Steps:**
+
+* Install dependencies
+* Run unit tests
+* Collect code coverage
+* Upload coverage as an artifact
+* Build backend app
+
+**Frontend Steps:**
+
+* Install dependencies
+* Install Playwright and dependencies
+* Run linter
+* Run Playwright tests
+* Build frontend for production
+
+**Copilot Task:**
+Generate a single GitHub Actions YAML file that automates the steps above for both backend and frontend builds and tests.
+```
+
