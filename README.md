@@ -22,4 +22,4 @@ A collection of GitHub Copilot Agent Mode demos showcasing real-world automation
 
 | Demo | Description | Link |
 |------|-------------|------|
-| **TBD** | Uses OpenSky Network API and Leaflet.js to visualize live airplane positions on a map. | [Agent-Mode-WrightBrothers.md](Agent-Mode-WrightBrothers.md) |
+| **TBD** | Uses the Wright Brothers application to enhance the REST API and Frontend app. | [Agent-Mode-WrightBrothers.md](Agent-Mode-WrightBrothers.md) |
