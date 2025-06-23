@@ -57,7 +57,7 @@ What other data can I pull from this API?
 
 ### Demo 1: Create a Pinball Finder app from IDE.
 
-#### Prompt usig HTML:
+#### Prompt using HTML:
 ```plaintext
 
 ### **Prompt:**
@@ -121,9 +121,9 @@ Act as a senior Python developer and project architect using Agent Mode. Build a
 ```
 
 If you want Copilot Agent Mode to produce:
-✅ **More polished, thorough solutions**
-✅ **Proactive best-practice suggestions**
-✅ **Collaborative Q\&A to nail down unclear areas**
+- ✅ **More polished, thorough solutions**
+- ✅ **Proactive best-practice suggestions**
+- ✅ **Collaborative Q\&A to nail down unclear areas**
 
 👉🏽 Then use the **Enhanced prompt**.
 

@@ -2,19 +2,7 @@
 
 **Estimated Duration: 20 minutes**
 
-A step-by-step demo for using GitHub Copilot Agent Mode to build a Pinball Finder app in Python. This project guides Copilot Agent Mode through atomic tasks, letting you build a complete airplane tracking app by pasting one prompt at a time. No live server or cloud deployment required — it all runs locally!
-
----
-
-## Getting Started
-
-TBD
-
----
-
-✅ You're all set to run this demo with Coding Agent. Paste each block above one at a time and enjoy the ride!
-
----
+A step-by-step demo for using GitHub Copilot Coding Agent to build a Pinball Finder app in Python. This project guides Copilot Coding Agent through atomic tasks, letting you build a complete airplane tracking app by pasting one prompt at a time. No live server or cloud deployment required — it all runs locally!
 
 ## About the Pinball Finder API
 The Public Pinball API is a RESTful web service provided by Pinball Map that allows developers to access data about pinball machines, locations, regions, and events. The API is open and does not require authentication for most endpoints, making it easy to integrate pinball-related data into your applications.
@@ -49,14 +37,12 @@ git clone [https://github.com/yourusername/pinball-finder.git](https://github.co
 1. Run `poetry init` in the terminal to set up dependency management.
 
 ```sh
-poetry init
+python -m poetry init
 ```
 
 1. Scaffold the project directory structure:
    - `src/`
    - `tests/`
-   - `README.md`
-
 
 #### 🔄 Recommendation for Repeating This Demo:
 
@@ -70,15 +56,22 @@ Each time you want to demo this project:
 
 ---
 
+✅ You're all set to run this demo with Coding Agent. Create each Issue below but do not assign it, enjoy the ride!
+
+> Create new issues (using these issue templates) directly on GitHub.com.
+
+---
+
 ## 📂 Issue 1
 
 ### 🎯 Title:
-
+```
 Implement Pinball Map API Client (Locations by Zip)
-
-### 🪜 Steps to Reproduce:
+```
 
 ```
+Steps to Reproduce:
+
 1. Review the Pinball Map API docs: https://pinballmap.com/api/v1/docs/1.0.html
 2. Create a new file at `src/pinballmap/client.py`.
 3. Implement a `get_locations_by_zip(zip_code: str)` function to fetch and parse the `/locations/by_zip_code.json` endpoint.
@@ -95,12 +88,13 @@ After pushing the scaffolded repo to GitHub, create this issue on GitHub.com to 
 ## 📂 Issue 2
 
 ### 🎯 Title:
-
+```
 Create PySide6 GUI for Pinball Finder App
-
-### 🪜 Steps to Reproduce:
+```
 
 ```
+Steps to Reproduce:
+
 1. Create a new file at `src/pinballmap/gui.py` for the PySide6 GUI.
 2. Add a text input for zip code.
 3. Add a submit button that triggers the `get_locations_by_zip()` client function.
@@ -117,12 +111,13 @@ Once the client issue is completed and pushed, create this issue on GitHub.com t
 ## 📂 Issue 3
 
 ### 🎯 Title:
-
+```
 Add Top 3 Frequent Machines Feature
-
-### 🪜 Steps to Reproduce:
+```
 
 ```
+Steps to Reproduce:
+
 1. Extend the API client to also retrieve the top 3 most frequently appearing machines for each zip code.
 2. Modify the GUI to:
    - Show each location with its top 3 machines displayed underneath.
