@@ -23,3 +23,51 @@ A collection of GitHub Copilot Agent Mode demos showcasing real-world automation
 | Demo | Description | Link |
 |------|-------------|------|
 | **TBD** | Uses the Wright Brothers application to enhance the REST API and Frontend app. | [Agent-Mode-WrightBrothers.md](Agent-Mode-WrightBrothers.md) |
+
+
+
+Exactly — great catch! 🎯 Let’s add a clear setup step so the demo doesn’t surprise you mid-flight. ✈️ Here’s the updated demo flow with the **Playwright installation** step added before running the tests:
+
+---
+
+## 🧭 Demo Flow — Playwright Test with Agent Mode
+
+✅ **Before running the tests**, make sure Playwright is installed:
+
+```bash
+npm init -y
+npm install --save-dev @playwright/test
+npx playwright install
+```
+
+✅ Then run the tests:
+
+```bash
+npx playwright test
+```
+
+---
+
+## 🎁 Updated Demo Flow Instructions
+
+Here’s a clean version for your talk track:
+
+1. 🔥 Generate the tests with Agent Mode.
+2. 📂 Check the `brand_catalog.spec.ts` file.
+3. ⚙️ Run the setup commands:
+
+   ```bash
+   npm init -y
+   npm install --save-dev @playwright/test
+   npx playwright install
+   ```
+4. 🏃 Run:
+
+   ```bash
+   npx playwright test
+   ```
+5. ✅ Show green checkmarks and talk about **MCP Playwright automation**!
+
+---
+
+🎯 Would you also like me to prepare a **one-page cheat sheet** with all these commands and a brief demo script so you can narrate each step smoothly? Let me know — I’d love to help you make this demo pitch-perfect! 🎸
