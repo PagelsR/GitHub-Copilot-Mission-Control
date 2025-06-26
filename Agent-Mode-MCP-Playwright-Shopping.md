@@ -57,6 +57,7 @@
      ```markdown
       Steps:
       1. Create a new file named `brand_catalog.spec.ts` and save in the `/tests` folder.
+        - Set the Playwright test timeout to 90000 ms (90s) for all tests in this file. - Hint: use `test.setTimeout(90000);` at the top of the file.
       2. Populate it with Playwright tests that:
         - Navigate to `https://app-6swivue3g4dqc-qa.azurewebsites.net/`
         - Verify the page title is "Catalog - Microsoft.eShopOnWeb"
