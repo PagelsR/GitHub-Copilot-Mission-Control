@@ -42,6 +42,39 @@
 
 
 ### Steps to Demo `mcp-playwright`:
+1. Open Visual Studio Code with `GitHubCopilot_MCP_Playwright_Testing` folder.
+
+1. **Show the Configure Tools** — show that PlayWright is installed.
+
+1. **Explain MCP Playwright** — introduce the concept of using Copilot to generate Playwright tests.
+
+1. **Navigate to the App** — briefly show the eShopOnWeb app.
+
+**Prompt**
+
+```bash
+please navigate to https://app-6swivue3g4dqc-qa.azurewebsites.net/
+```
+
+1. Expand the `Ran playwright_navigate` command and show the commands.
+
+1. Next, let's try some simple navigation commands.
+
+**Prompt**
+
+```bash
+please click the dropdown button for brand and select .net, then click the submit button.
+```
+
+1. Great! Now, let's create a test to verify the page title.
+
+**Prompt**
+
+```markdown
+TBD
+```
+
+
 
 1. **Show the app manually first** — briefly navigate to `https://app-6swivue3g4dqc-qa.azurewebsites.net/` so your audience can see the UI.
 2. **Explain what Playwright is:**
@@ -50,7 +83,7 @@
 
      > “Playwright is a browser automation tool. And Copilot supports mcp-playwright so we can generate and run automated browser tests on this app — in real time.”
 
-3. **Run the `mcp-playwright` demo script in Agent Mode:**
+3. **Create a test using Agent Mode:**
 
    * Suggested prompt you can use:
 
