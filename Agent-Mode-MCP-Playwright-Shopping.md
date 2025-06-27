@@ -44,6 +44,12 @@
 ### Steps to Demo `mcp-playwright`:
 1. Open Visual Studio Code with `GitHubCopilot_MCP_Playwright_Testing` folder.
 
+1. **Explain what Playwright is:**
+
+   * Say:
+
+     > “Playwright is a browser automation tool. And Copilot supports mcp-playwright so we can generate and run automated browser tests on this app — in real time.”
+
 1. **Show the Configure Tools** — show that PlayWright is installed.
 
 1. **Explain MCP Playwright** — introduce the concept of using Copilot to generate Playwright tests.
@@ -70,18 +76,13 @@ please click the dropdown button for brand and select .net, then click the submi
 
 **Prompt**
 
-```markdown
-TBD
-```
+> Use **GitHub Copilot Agent Mode** - **Model GPT-4.1**
 
+- Copy the contents from `Scenerio-Shop by Brand.md` and paste it into Chat.
 
-
-1. **Show the app manually first** — briefly navigate to `https://app-6swivue3g4dqc-qa.azurewebsites.net/` so your audience can see the UI.
-2. **Explain what Playwright is:**
-
-   * Say:
-
-     > “Playwright is a browser automation tool. And Copilot supports mcp-playwright so we can generate and run automated browser tests on this app — in real time.”
+################# STOP HERE - To Be Continued #################
+################# STOP HERE - To Be Continued #################
+################# STOP HERE - To Be Continued #################
 
 3. **Create a test using Agent Mode:**
 
