@@ -27,22 +27,15 @@
   npm init playwright@latest --yes "--" . '--quiet' '--browser=chromium' '--browser=firefox' '--gha'
   ```
 
-**Start the Playwight MCP Server**:
-- Open settings.json in VS Code.
-- Find the `mcp-playwright.server` setting.
-- Click `Start` to enable the Playwright server.
-
 ---
 
 ✅ You're all set to run this demo with GitHub Copilot Agent Mode. Paste each block below one at a time and enjoy the ride!
 
 ---
 
-
-
-
 ### Steps to Demo `mcp-playwright`:
 1. Open Visual Studio Code with `GitHubCopilot_MCP_Playwright_Testing` folder.
+  - i.e. Cloned from https://github.com/PagelsR/GitHubCopilot_MCP_Playwright_Testing
 
 1. **Explain what Playwright is:**
 
@@ -52,15 +45,19 @@
 
 1. **Show the Configure Tools** — show that PlayWright is installed.
 
+1. Click on the **Gear Icon** and select **Playwright**, then click **Start**.
+
 1. **Explain MCP Playwright** — introduce the concept of using Copilot to generate Playwright tests.
 
 1. **Navigate to the App** — briefly show the eShopOnWeb app.
 
-**Prompt**
+> **Use Copilot Agent Mode** - Select model **GPT-4.1**
 
-```bash
-please navigate to https://app-6swivue3g4dqc-qa.azurewebsites.net/
-```
+  **Prompt**
+
+  ```bash
+  please navigate to https://app-6swivue3g4dqc-qa.azurewebsites.net/
+  ```
 
 1. Expand the `Ran playwright_navigate` command and show the commands.
 
@@ -80,45 +77,17 @@ please click the dropdown button for brand and select .net, then click the submi
 
 - Copy the contents from `Scenerio-Shop by Brand.md` and paste it into Chat.
 
-################# STOP HERE - To Be Continued #################
-################# STOP HERE - To Be Continued #################
-################# STOP HERE - To Be Continued #################
+- Click **Submit** and let Copilot generate the test file.
 
-3. **Create a test using Agent Mode:**
+- Click **Continue** to proceed with the next steps.
 
-   * Suggested prompt you can use:
-
-     ```markdown
-      Steps:
-      1. Create a new file named `brand_catalog.spec.ts` and save in the `/tests` folder.
-        - Set the Playwright test timeout to 90000 ms (90s) for all tests in this file. - Hint: use `test.setTimeout(90000);` at the top of the file.
-      2. Populate it with Playwright tests that:
-        - Navigate to `https://app-6swivue3g4dqc-qa.azurewebsites.net/`
-        - Verify the page title is "Catalog - Microsoft.eShopOnWeb"
-        - Test all the brand filter options:
-          - ".NET"
-          - "Azure"
-          - "SQL Server"
-          - "Visual Studio"
-          - And a "Flaky" option that sometimes returns no results
-        - Submit the filter and assert the displayed product count matches the expected results.
-      3. Implement all of the validation logic as shown in the example tests.
-      4. Include a `beforeEach` setup that:
-        - Goes to the app’s home page (`domcontentloaded`)
-        - Verifies the page title.
-      5. 🛑 Stop after creating the file so I can review the output before continuing.
-
-      Agent Mode Instructions:
-      - Base the implementation on the sample test logic I provided.
-      - Ensure selectors (`#CatalogModel_BrandFilterApplied`, `#esh-pager-item-msg-top`, etc.) match exactly.
-      - Implement all the individual tests as described.
-      ```
+1. **Wait, what's happening?**
 
    * Explain:
 
      > “Behind the scenes, Copilot is using MCP — the Model Context Protocol — to read the current file (brand_catalog.spec.ts), figure out what’s missing, and then generate just the new tests we asked for. Every time we prompt, it’s fetching the file, analyzing its contents, and iteratively improving it — that’s MCP in action!”
 
-4. **Key Points:**
+1. **Key Points:**
 
    * Highlight how Copilot **writes the test**.
    * Show the Playwright code to your audience — read one or two key lines.
@@ -165,7 +134,7 @@ Show off **self-healing and iterative development** — the heart of MCP Playwri
 ```markdown
 ## Enhance the Existing Playwright Test
 Steps:
-1. Update the existing `brand_catalog.spec.ts` file.
+1. Update the existing `Shop by Brand.spec.ts` file.
 2. Add a new test that:
    - Filters by the "Visual Studio" option.
    - Submits the form.
