@@ -33,6 +33,8 @@
 
 ---
 
+## Using `mcp-playwright` for Automated Testing - Shopping
+
 ### Steps to Demo `mcp-playwright`:
 1. Open Visual Studio Code with `GitHubCopilot_MCP_Playwright_Testing` folder.
   - i.e. Cloned from https://github.com/PagelsR/GitHubCopilot_MCP_Playwright_Testing
@@ -150,6 +152,20 @@ Agent Mode Instructions:
 - Preserve all existing tests.
 - Clearly highlight the new “Visual Studio” test and the new screenshot behavior.
 ```
+
+---
+
+## Using `mcp-playwright` for Automated Testing - Movie Database
+
+### Step 1
+Explore https://movies.zaps.dev/?category=Popular&page=1
+Summarize what this website if used for.
+
+### Step 2
+Generate a test to find a Top Rated movies, pick one. Tell and tell what the synopsis is and the minutes. Generate this test in a trivial way to avoid matching public code.
+
+### Step 3
+Add 2 more tests. 1. toggle-mode and 2. searching
 
 ---
 
