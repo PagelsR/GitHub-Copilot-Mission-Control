@@ -69,7 +69,7 @@ Show me the top 10 open security alerts in https://github.com/Technical-Bootcamp
 ### 2. List All Secret Scanning Alerts
 
 ```
-List all secret scanning alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, including the file and line number where each secret was found.
+List me the top 10 secret scanning alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, including the file and line number where each secret was found.
 ```
 
 ### 3. Review Pull Requests with Open Security Alerts
