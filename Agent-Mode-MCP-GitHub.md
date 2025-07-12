@@ -18,15 +18,6 @@
 - Make sure **Agent Mode** is toggled on.
 - You’re now ready to start pasting the prompts below.
 
-✅ **Install Playwright**, make sure Playwright is installed:
-
-- Open the terminal in VS Code.
-- Run the following commands:
-
-  ```bash
-  npm init playwright@latest --yes "--" . '--quiet' '--browser=chromium' '--browser=firefox' '--gha'
-  ```
-
 ---
 
 ✅ You're all set to run this demo with GitHub Copilot Agent Mode. Paste each block below one at a time and enjoy the ride!
@@ -36,40 +27,25 @@
 ### Steps to Demo `@modelcontextprotocol/server-github`:
 1. Open Visual Studio Code with `GHAS-Demo` folder.
 
-1. **Explain what Playwright is:**
-
-   * Say:
-
-     > “Playwright is a browser automation tool. And Copilot supports mcp-playwright so we can generate and run automated browser tests on this app — in real time.”
-
-1. **Show the Configure Tools** — show that PlayWright is installed.
-
-1. Click on the **Gear Icon** and select **Playwright**, then click **Start**.
-
-1. **Explain MCP Playwright** — introduce the concept of using Copilot to generate Playwright tests.
-
-1. **Navigate to the App** — briefly show the eShopOnWeb app.
-
-> **Use Copilot Agent Mode** - Select model **GPT-4.1**
+2. Start the MCP GitHub Server:
+   ```bash
+   npx mcp-server-github
+   ```
 
 
-
-Absolutely, Randy! Here’s your list with **each prompt clearly boxed in triple backticks** for easy copying right from GitHub markdown:
-
----
 
 ## Example MCP Prompts for Reviewing PRs and Security Alerts
 
 ### 1. Show Open Security Alerts by Type
 
 ```
-Show me the top 10 open security alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, grouped by alert type (e.g., secret scanning, code scanning, Dependabot).
+Show me the top 5 open security alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, grouped by alert type (e.g., secret scanning, code scanning, Dependabot).
 ```
 
 ### 2. List All Secret Scanning Alerts
 
 ```
-List me the top 10 secret scanning alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, including the file and line number where each secret was found.
+List me the top 10 secret scanning alerts in https://github.com/Technical-Bootcamp/pagelsr-ghas-bootcamp, ordered by Secret type including the file and line number where each secret was found.
 ```
 
 ### 3. Review Pull Requests with Open Security Alerts
