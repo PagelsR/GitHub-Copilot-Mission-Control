@@ -1,32 +1,36 @@
 # Codebase Explain, Frontend
 
-## Mission
-Use Copilot Chat to understand the React app structure, the data flow to the API, and where to improve.
+**Goal**  
+Map the React app, data flow to the backend, and prepare a plan for refactors and tests.
 
-## Why this matters
-You make better changes when you know component boundaries, props, state, and fetch points.
-
-## Copilot mode
-Copilot Chat in the VS Code side panel.
+**Time** 5 to 8 minutes
 
 ## Prerequisites
 - React app opened in VS Code
-- The backend API running locally
-- Copilot Chat enabled
+- Backend running locally
 
-## Steps
-1) Map the UI
-Prompt in Chat
-> Explain this React codebase. Identify the app entry, routing, key components, shared UI, and API calls. List each component and its props.
+## Step 1, Explain the app
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Explain this React app. Identify entry point, routing, key components, shared UI, and API calls. 
+List components and their props.
+```
 
-2) Trace the data flow
-Prompt in Chat
-> Show where we fetch plane data, how it is transformed, and where it is displayed. Identify duplication and missing loading or error states.
+## Step 2, Trace data flow
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Show where we fetch plane data, how it is transformed, and where it is displayed. 
+Identify duplication and missing loading or error states.
+```
 
-3) Surface opportunities
-Prompt in Chat
-> Propose three improvements we can demonstrate with Copilot Edits, for example extracting a PlaneList item component, adding error boundaries, or standardizing date formatting.
+## Step 3, Pick three improvements
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Propose three improvements for Copilot Edits, for example extracting a PlaneRow component, adding error boundaries, or standardizing date formatting.
+```
 
-4) Produce a short demo script
-Prompt in Chat
-> Draft a two minute demo script to explain the app, call out weak spots, and set up an Edits pass and an Agent Mode pass.
+## Step 4, Demo script
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Draft a 2 minute demo script to explain the app, call out weak spots, and set up an Edits and an Agent Mode pass.
+```

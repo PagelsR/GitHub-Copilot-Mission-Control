@@ -1,41 +1,60 @@
 # Codebase Explain, Backend
 
-## Mission
-Use Copilot Chat to understand the API quickly, identify endpoints and models, and plan the next steps.
+**Goal**  
+Get a clear overview of the Wright Brothers API, routes, models, and test surface, then produce a short demo plan.
 
-## Why this matters
-You move faster when you start with a clear picture. Chat gives you a concise map and a short plan you can follow.
-
-## Copilot mode
-Copilot Chat in the VS Code side panel.
+**Time** 5 to 8 minutes  
+**Best for** First run in any repo
 
 ## Prerequisites
-- .NET 8 SDK
-- WrightBrothersApi opened in VS Code
-- Copilot Chat enabled
+- .NET 8 SDK installed
+- VS Code with GitHub Copilot Chat
+- Repo path: `backend/WrightBrothersApi` and `backend/WrightBrothersApi.Tests`
 
-## Steps
-1) Create a map of the backend  
-Prompt in Chat  
-> Explain this codebase at a high level. Identify projects, key folders, controllers, models, and DTOs. List the public endpoints with HTTP verbs, route templates, and short summaries.
-
-2) Find hotspots worth demoing  
-Prompt in Chat  
-> Based on the structure, which parts are good candidates for Copilot Edits, for example repeated logic, long methods, and missing validation. Return a checklist.
-
-3) Generate a test plan outline  
-Prompt in Chat  
-> Propose a test plan for the API. Cover unit tests for services, minimal controller tests, and a smoke test with dotnet test. Include command examples.
-
-4) Produce a short demo script  
-Prompt in Chat  
-> Draft a three minute demo script with intro, steps, and expected outputs. Optimize for using Chat to understand, Edits to refactor, and Agent Mode to finish the task.
-
-5) Optional, quick endpoint inventory  
-Commands  
+## Step 1, Open the repo
 ```bash
 cd backend/WrightBrothersApi
+code .
+```
+
+## Step 2, Explain the codebase
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Explain this codebase at a high level. Identify projects, key folders, controllers, models, and DTOs. 
+List public endpoints with HTTP verbs and route templates. Return a concise table.
+```
+
+## Step 3, Find safe refactor targets
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+From this codebase, list three safe refactor candidates for Copilot Edits. 
+Prefer repeated validation, long methods, or duplicate mapping logic. 
+Return a checklist with file names and function names.
+```
+
+## Step 4, Propose a test plan
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Propose a test plan for this API using xUnit. Include unit tests for services, a minimal controller test, 
+and a smoke test that builds and runs the API with dotnet. Include exact shell commands.
+```
+
+## Step 5, Draft a 3 minute demo script
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Draft a 3 minute demo script. Sections: Intro, Codebase tour, Refactor target, Test plan, Close. 
+Keep it concise. Use bullet points.
+```
+
+
+### Verify
+- Follow the on screen instructions
+- If Copilot changes more than expected, say: **Keep scope small, do not change behavior** and retry
+
+
+## Optional, quick route inventory
+```bash
 dotnet build
 dotnet watch run
-# Open Swagger UI and confirm routes
+# Open Swagger UI and compare with Copilot's inventory
 ```

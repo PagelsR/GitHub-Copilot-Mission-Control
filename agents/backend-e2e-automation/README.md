@@ -1,41 +1,41 @@
 # Backend E2E Automation
 
-## Mission
-Use Copilot Agent Mode to add a small feature, update tests and docs, and open a PR.
+**Goal**  
+Use Copilot Agent Mode to add a status update endpoint with validation and tests, update docs, and open a PR.
 
-## Why this matters
-Agent Mode can coordinate work across files and tasks. This is ideal when a single request touches routes, models, tests, and docs.
-
-## Copilot mode
-Copilot Agent Mode, with Chat for quick checkpoints.
+**Time** 12 to 20 minutes
 
 ## Prerequisites
-- A clean branch
+- Clean branch
 ```bash
 git checkout -b demo/agent-backend-e2e
 ```
-- dotnet test is passing
-- API runs locally
+- Tests passing
+```bash
+dotnet test
+```
 
-## Steps
-1) Define the mission in one shot  
-Agent prompt  
-> Mission, add an update endpoint for Plane status with validation and tests. Steps, create PATCH /planes/{id}/status, validate allowed transitions, add unit tests, update Swagger docs with examples, and update README with a short usage section. Open a PR when done.
+## Step 1, Define the mission
+Copy into Agent Mode.
+```
+Mission, add PATCH /planes/{id}/status to update a plane's status with validation of allowed transitions. 
+Also add unit tests, update Swagger with examples, and add a short usage section in README. 
+When complete, open a PR with a structured description and label it backend,status.
+```
 
-2) Review and approve the plan  
-Check the file list and diffs. If scope drifts, ask the Agent to restate constraints.
+## Step 2, Approve the plan
+If scope drifts, tell the Agent: **Keep scope small and focused**.
 
-3) Run and verify  
+## Step 3, Run and verify
 ```bash
 dotnet build
 dotnet test
 dotnet watch run
-# verify new endpoint via curl or Swagger
+# verify via Swagger or curl
 ```
 
-4) Ask for a PR with a structured description  
-Agent follow up  
-> Open a PR with a clear title, bullet summary, test evidence, and risks. Label it backend and status update.
-
-5) Summarize the result with Chat  
-> Summarize what changed and why this was safe. List any follow ups.
+## Step 4, Open the PR
+Copy into Agent Mode.
+```
+Open a PR with a clear title, bullet summary, test evidence, and risks. 
+```

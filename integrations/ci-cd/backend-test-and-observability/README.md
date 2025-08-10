@@ -1,39 +1,51 @@
 # Backend Tests and Observability
 
-## Mission
-Tighten local testing, logs, and health checks. Show patterns that translate well into CI.
+**Goal**  
+Add a health endpoint, structured logs, and two unit tests. Prepare notes for CI.
 
-## Why this matters
-Strong demos show green tests, clear logs, and simple checks that signal health.
-
-## Copilot modes
-Chat for scaffolding and ideas, Edits for instrumentation.
+**Time** 10 to 15 minutes
 
 ## Prerequisites
-- WrightBrothersApi and WrightBrothersApi.Tests build
-- dotnet test passes on main
+- API builds locally
+```bash
+cd backend/WrightBrothersApi && dotnet build
+```
 
-## Steps
-1) Add or confirm a health endpoint  
-Chat prompt  
-> If not present, add GET /health that returns 200 OK with app name and version from assembly info.
+## Step 1, Health endpoint
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+If not present, add GET /health that returns 200 OK and JSON: { "app": "<name>", "version": "<1.0.0>" }. 
+Read version from assembly info. Keep the controller small.
+```
 
-2) Add structured logging  
-Edits prompt  
-> Add structured logging in startup and PlaneController. Log route, status code, and execution time. Keep logs concise.
+## Step 2, Structured logging
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Add structured logging in startup and PlaneController. Log route, status code, and execution time. 
+Keep logs concise and avoid PII.
+```
 
-3) Expand tests with one happy path and one edge case  
-Chat prompt  
-> Propose two xUnit tests for PlaneService, one happy path and one failure. Generate the test methods with clear Arrange, Act, Assert.
+## Step 3, Tests
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+In WrightBrothersApi.Tests, add two xUnit tests for PlaneService. 
+One happy path, one failure case. Use Arrange, Act, Assert. Keep them fast and deterministic.
+```
 
-4) Run locally and show the flow  
+## Step 4, Run locally
 ```bash
 dotnet test
 dotnet watch run
-# In a new terminal
 curl -i http://localhost:5000/health
 ```
 
-5) CI ready notes  
-Chat prompt  
-> Write a short section for a CI job that runs dotnet build and dotnet test with trx output, and publishes the test results artifact.
+## Step 5, CI notes
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Write a short CI section that runs dotnet build and dotnet test with trx output and publishes test results as an artifact.
+```
+
+
+### Verify
+- Follow the on screen instructions
+- If Copilot changes more than expected, say: **Keep scope small, do not change behavior** and retry

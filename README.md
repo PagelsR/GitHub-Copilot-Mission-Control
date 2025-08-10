@@ -85,10 +85,6 @@ Each demo explains why it matters, which Copilot mode to use, and gives detailed
 
 ---
 
-## 🔮 Coming Soon
-- **Frontend Demos** – React + API integration, UI refactors, accessibility improvements
-- **MCP Demos** – Model Context Protocol integrations for live data and advanced workflows
-
 ---
 
 ## 🛠 How to Use
@@ -103,3 +99,33 @@ Each demo explains why it matters, which Copilot mode to use, and gives detailed
 - **Backend Demos**: ✅ Ready
 - **Frontend Demos**: 🔄 In progress
 - **MCP Demos**: 🔄 In progress
+
+---
+
+## Frontend Demos
+
+### Chat
+- **[Codebase Explain, Frontend](chat/codebase-explain-frontend/)**  
+  Use Copilot Chat to map the React app, data flow, and improvement targets.
+
+### Edits
+- **[Frontend, Component Refactors](edits/frontend-component-refactors/)**  
+  Extract smaller components, improve naming, and add type safety.
+
+### Integrations
+- **[Frontend API and State](integrations/frontend-api-and-state/)**  
+  Wire the UI to the backend API, add loading and error states, and test it.
+
+### Agents
+- **[Frontend Flight Tracker with Leaflet.js](agents/frontend-flight-tracker/)**  
+  Visualize planes on a live map with filtering and auto refresh.
+- **[Frontend Hangar Bay Scheduler](agents/frontend-hangar-scheduler/)**  
+  Reservation UI for hangar bays with daily/weekly views.
+- **[Frontend Airport Density Heatmap](agents/frontend-airport-heatmap/)**  
+  Leaflet heatmap of airport density with hub markers.
+
+---
+
+## MCP Demos
+- **[GitHub Security and PR Review](mcp/github-security-review/)**  
+- **[Playwright E2E with MCP](mcp/playwright-e2e/)**

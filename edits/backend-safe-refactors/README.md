@@ -1,46 +1,56 @@
 # Backend, Safe Refactors
 
-## Mission
-Apply small, safe refactors with Copilot Edits to improve clarity without changing behavior.
+**Goal**  
+Apply small refactors with Copilot Edits, keep behavior identical, and pass tests.
 
-## Why this matters
-Edits are ideal when you want precise multi file changes with guardrails. You keep control and review each proposal.
-
-## Copilot mode
-Copilot Edits for the changes, Chat to summarize diffs.
+**Time** 8 to 12 minutes  
+**Best for** Readability, duplication, consistent docs
 
 ## Prerequisites
-- WrightBrothersApi open in VS Code
-- Tests compile
-- A feature branch
+- Branch created for refactor
 ```bash
 git checkout -b demo/edits-refactors
 ```
+- Tests compile
+```bash
+dotnet build && dotnet test
+```
 
-## Steps
-1) Identify a target  
-Pick one item from the checklist created in the Chat demo.
+## Step 1, Extract validation
+Open the file that contains Plane creation logic. Select the method body.
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Extract validation logic into a helper method named ValidatePlaneInput with clear error messages. 
+Keep behavior identical. Update all call sites. Do not change public signatures.
+```
 
-2) Create a focused Edit request  
-Select the function or file, open Copilot Edits, then ask  
-> Extract validation for Plane creation into a helper method with clear error messages. Keep behavior identical. Update all call sites.
+## Step 2, Summarize the diff
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Summarize the diff. Call out any behavior changes or risk areas.
+```
 
-3) Review the proposed changes  
-Use Chat  
-> Summarize the diff and call out any behavior changes or risk areas.
+## Step 3, Improve names and docs
+Select the changed files and run another Edit.
+Copy the prompt below into **Copilot Chat**. Paste one block at a time.
+```
+Improve naming for clarity and add XML doc comments for public methods. 
+Do not change behavior. Keep the signature of existing methods.
+```
 
-4) Run tests and smoke the API  
+## Step 4, Test
 ```bash
 dotnet test
 dotnet watch run
 ```
 
-5) Do a second pass for naming and docs  
-Open Edits again  
-> Improve naming for clarity and add XML doc comments for public methods. Do not change behavior.
-
-6) Commit  
+## Step 5, Commit
 ```bash
 git add -A
-git commit -m "Refactor validations and docs, no behavior change"
+git commit -m "Refactor validation and docs, no behavior change"
 ```
+
+
+### Verify
+- Follow the on screen instructions
+- If Copilot changes more than expected, say: **Keep scope small, do not change behavior** and retry
