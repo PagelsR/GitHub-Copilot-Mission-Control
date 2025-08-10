@@ -1,7 +1,7 @@
 # Copilot Mission Control 🚀
 *Your central command for mastering GitHub Copilot, Agents, Edits, Chat, MCP, and more.*
 
-![Copilot Mission Control Logo](assets/mission-control-logo.png)
+![Copilot Mission Control Logo](assets/mission-control-logo-wide.png)
 
 This repo contains organized demos grouped by Copilot mode and focus area. 
 The current release includes backend-focused demos, with frontend and MCP content coming soon.
