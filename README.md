@@ -1,73 +1,105 @@
-# GitHub Copilot Mission Control
+# Copilot Mission Control 🚀
+*Your central command for mastering GitHub Copilot, Agents, Edits, Chat, MCP, and more.*
 
-A collection of GitHub Copilot Agent Mode demos showcasing real-world automation across APIs, UIs, and data workflows.
+![Copilot Mission Control Logo](assets/mission-control-logo.png)
 
-🚀 Explore hands-on GitHub Copilot Agent Mode demos that automate tasks, control apps, and streamline development workflows.
-
----
-
-## 🗂️ Agent Mode Demo from Scratch
-
-| Demo | Description | Link |
-|------|-------------|------|
-| **Air Traffic Map** | Uses OpenSky Network API and Leaflet.js to visualize live airplane positions on a map. | [Agent-Mode-AirTrafficMap.md](Agent-Mode-AirTrafficMap.md) |
-| **Earthquake Heatmap** | Pulls real-time earthquake data from the USGS API and displays them on a Leaflet.js heatmap with magnitude-based color coding. | [Agent-Mode-USGS Earthquakes.md](Agent-Mode-USGS%20Earthquakes.md) |
-| **ISS Tracker** | Uses the Open Notify API to show the current location of the International Space Station on a map, updating every 5 seconds. | [Agent-Mode-ISS Tracker.md](Agent-Mode-ISS%20Tracker.md) |
-| **Task Tracker** | Builds a task tracker app with local persistence using HTML, CSS, and JavaScript. | [Agent-Mode-TaskTracker.md](Agent-Mode-TaskTracker.md) |
-| **Pickleball Court Tracker** | Builds an interactive reservation system for pickleball courts. | [Agent-Mode-Pickleball Court Tracker.md](Agent-Mode-PickleballCourtTracker.md) |
+This repo contains organized demos grouped by Copilot mode and focus area. 
+The current release includes backend-focused demos, with frontend and MCP content coming soon.
 
 ---
 
-## 🗂️ Agent Mode Demo using Wright Brothers App
+## 📂 Folder Structure
 
-| Demo | Description | Link |
-|------|-------------|------|
-| **TBD** | Uses the Wright Brothers application to enhance the REST API and Frontend app. | [Agent-Mode-WrightBrothers.md](Agent-Mode-WrightBrothers.md) |
-
-
-
-Exactly — great catch! 🎯 Let’s add a clear setup step so the demo doesn’t surprise you mid-flight. ✈️ Here’s the updated demo flow with the **Playwright installation** step added before running the tests:
-
----
-
-## 🧭 Demo Flow — Playwright Test with Agent Mode
-
-✅ **Before running the tests**, make sure Playwright is installed:
-
-```bash
-npm init -y
-npm install --save-dev @playwright/test
-npx playwright install
+```
+copilot-mission-control/
+│
+├── README.md
+├── .gitignore
+├── docs/
+│   ├── overview.md
+│   ├── tips-and-tricks.md
+│   └── faq.md
+│
+├── assets/
+│   └── mission-control-logo.png
+│
+├── chat/
+│   └── codebase-explain-backend/
+│       ├── README.md
+│       └── prompts/
+│           └── explain-codebase.md
+│
+├── edits/
+│   └── backend-safe-refactors/
+│       ├── README.md
+│       └── prompts/
+│           └── refactor-validations.md
+│
+├── integrations/
+│   └── ci-cd/
+│       └── backend-test-and-observability/
+│           ├── README.md
+│           └── snippets/
+│               ├── sample-ci-notes.md
+│               └── curl-health.txt
+│
+├── agents/
+│   └── backend-e2e-automation/
+│       ├── README.md
+│       └── prompts/
+│           └── status-update-mission.md
+│
+├── backend/
+│   ├── WrightBrothersApi/
+│   └── WrightBrothersApi.Tests/
+│
+└── frontend/
+    └── README.md
 ```
 
-✅ Then run the tests:
+---
 
-```bash
-npx playwright test
-```
+## 🛰 About
+Copilot Mission Control is designed to make it easy to demo and learn GitHub Copilot capabilities in a structured way. 
+Each demo explains why it matters, which Copilot mode to use, and gives detailed steps for reproducibility.
 
 ---
 
-## 🎁 Updated Demo Flow Instructions
+## 📋 Current Demo Categories
 
-Here’s a clean version for your talk track:
+### Chat
+- **[Codebase Explain, Backend](chat/codebase-explain-backend/)**  
+  Use Copilot Chat to explore the Wright Brothers API, understand its structure, and plan follow-up demos.
 
-1. 🔥 Generate the tests with Agent Mode.
-2. 📂 Check the `brand_catalog.spec.ts` file.
-3. ⚙️ Run the setup commands:
+### Edits
+- **[Backend, Safe Refactors](edits/backend-safe-refactors/)**  
+  Apply small, safe changes with Copilot Edits while maintaining behavior and readability.
 
-   ```bash
-   npm init -y
-   npm install --save-dev @playwright/test
-   npx playwright install
-   ```
-4. 🏃 Run:
+### Integrations
+- **[Backend Tests and Observability](integrations/ci-cd/backend-test-and-observability/)**  
+  Enhance backend health checks, structured logs, and test coverage with Copilot.
 
-   ```bash
-   npx playwright test
-   ```
-5. ✅ Show green checkmarks and talk about **MCP Playwright automation**!
+### Agents
+- **[Backend E2E Automation](agents/backend-e2e-automation/)**  
+  Use Copilot Agent Mode to deliver an end-to-end backend feature with coordinated code, tests, and documentation.
 
 ---
 
-🎯 Would you also like me to prepare a **one-page cheat sheet** with all these commands and a brief demo script so you can narrate each step smoothly? Let me know — I’d love to help you make this demo pitch-perfect! 🎸
+## 🔮 Coming Soon
+- **Frontend Demos** – React + API integration, UI refactors, accessibility improvements
+- **MCP Demos** – Model Context Protocol integrations for live data and advanced workflows
+
+---
+
+## 🛠 How to Use
+1. Clone this repo  
+2. Open in VS Code with GitHub Copilot Chat, Edits, and Agent Mode enabled  
+3. Pick a demo and follow its README  
+4. Use the prompts exactly as given, or adapt them to your own project
+
+---
+
+## 📡 Mission Status
+- **Backend Demos**: ✅ Ready
+- **Frontend Demos**: 🔄 In progress
+- **MCP Demos**: 🔄 In progress
