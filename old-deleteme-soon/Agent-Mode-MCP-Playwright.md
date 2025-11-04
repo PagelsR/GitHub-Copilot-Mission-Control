@@ -58,7 +58,7 @@
   **Prompt**
 
   ```bash
-  please navigate to https://app-6swivue3g4dqc-qa.azurewebsites.net/
+  please navigate to https://app-6swivue3g4dqc.azurewebsites.net/
   ```
 
 1. Expand the `Ran playwright_navigate` command and show the commands.
@@ -175,3 +175,4 @@ Add 2 more tests. 1. toggle-mode and 2. searching
 ✅ Run this **follow-up prompt** → Agent iterates and enhances the existing file.
 ✅ Show the updated file and highlight the **new test and screenshots** feature.
 ✅ Finally, run `npx playwright test --headed` so you can show the screenshot files being saved!
+
